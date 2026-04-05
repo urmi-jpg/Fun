@@ -3,10 +3,6 @@
 <head>
     <title>Hangout with me?</title>
     <style>
-        <audio id="bg-music" loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
-        
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
@@ -80,7 +76,7 @@
 
 <body>
 
-    <h1>Wanna hang out with me next weekend? 💫</h1>
+    <h1>Hey, wanna hang out this weekend? 💫</h1>
     <p>I promise it'll be fun 😄</p>
 
     <button id="yes">Yes 💖</button>
@@ -104,13 +100,8 @@
         });
 
         // Yes button click
-const music = document.getElementById("bg-music");
-
-yesBtn.addEventListener("click", () => {
-    message.style.display = "block";
-    music.volume = 0.3;
-    music.play();
-});
+        yesBtn.addEventListener("click", () => {
+            message.style.display = "block";
         });
 
         // Floating hearts generator
